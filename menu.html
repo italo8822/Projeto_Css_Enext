@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabanho enext css"> 
+    <title>Desafio de CSS - PCVTX 22</title>
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+        <nav>
+            <div class="logo"> <a> <img src="https://pbs.twimg.com/media/FS-wdw7X0AExhbB?format=png&name=small" alt="LOGO" width="25" height="20"> Programa de Capacitação </a> </div>
+            <div class="a">
+            <a  href="#">^</a>
+            <a  href="#">contact</a>
+            <a  href="#">gallery</a>
+            <a  href="#">skills</a>
+            <a  href="#">profile</a>  
+            </div>
+        </nav>
+
+        <div class="banner"><h1>Desafio de CSS - PCVTX 22</h1></div>
+
+        <img class="perfil" src="https://pbs.twimg.com/profile_images/1514574212207419394/WErIHew0_400x400.png" alt=""> 
+        
+
+        <main>
+            <!-- resumo pessoal -->
+            <section class="resumo">
+                <div class="info">
+                    <h2><strong>Italo Lima, 20</strong></h2> 
+                    <em>Jaboatão dos guararapes - PE</em>
+                    <hr>
+                    <p class="texto">
+                        Estudante de ciências da computação, gosto de ir à praia e está sempre em contato com a natureza e com as pessoas.  
+                    </p>
+                    <p class="texto">
+                        A algum tempo venho despertando total interesse em front-end e buscando me aperfeiçoar e me desafiar cada vez mais. Programo em Python com facilidade e sou amante de Redes de Computadores.
+                    </p>
+                </div>
+                <img class="imagem" src="https://media-exp1.licdn.com/dms/image/C4D16AQHR_83JYAg_kw/profile-displaybackgroundimage-shrink_350_1400/0/1616511748839?e=1658361600&v=beta&t=qJgcUSRqmmay6ZjTUDan-H0FCbfSGzERJU4C_UaRE3c" alt="">
+            </section>
+
+            <!-- Habilidades e competências  -->
+            <div id="linguagens_2">
+                <p> Habilidades e Competências </p> <br> 
+                <a><img src="https://camo.githubusercontent.com/fc68347cbfb150943459bae429fe683545a990e1523d252ee11e500a7b39a3e7/68747470733a2f2f692e696d6775722e636f6d2f5162374347634f2e706e67" alt="html5" width="58" height="58"></a>
+                <a><img src="https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/css-3-512.png" alt="css3" width="58" height="58"></a>
+                <a><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" alt="javascript" width="58" height="58"></a>
+                <a><img src="https://images-na.ssl-images-amazon.com/images/I/61np1wbr9pL.png" alt="vue" width="58" height="58"></a>
+                <a><img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="react" width="58" height="58"></a>
+                <a><img src="https://pbs.twimg.com/profile_images/1414659268318568450/eQPmgbFO_400x400.jpg" alt="vtex" width="58" height="58"></a> 
+                <br> <br> <br> 
+                <a href="https://www.linkedin.com/in/italorenato/" target="_blanck"><button class="btn_2"> <h3>Linkedin</h3> </button></a>
+            </div>
+
+            <!-- galeria de fotos  -->
+            <section class="projects wrapper" id="project"> 
+                <p>Galeria de Fotos</p>
+                <div class="container"> <!-- CONTAINER É A DIV MÃE, QUE CONTÉM OS ITENS -->
+                    <img class="itens" src="https://u3v8d4z2.stackpathcdn.com/wp-content/uploads/2016/04/Gagosian-Nova-York.jpg" alt="img">
+                    <img class="itens" src="https://u3v8d4z2.stackpathcdn.com/wp-content/uploads/2016/04/Museum-Of-Modern-Art-Nova-York.jpg" alt="img">
+                    <img class="itens" src="https://www.folhadealphaville.com.br/images/articles/6437/b2ap3_medium_entrance-image--museum-crop-7516b01003659172f2d9dbc7a6c2e9d9.jpg" alt="img">
+                    <img class="itens" src="http://www.epochtimes.com.br/wp-content/uploads/2013/07/Galeria-de-arte-contemporanea-em-Nova-York.jpg" alt="img">
+                    <img class="itens" src="https://portuguessemmisterio.files.wordpress.com/2016/06/nova-york.jpg" alt="img">
+                    <img class="itens" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-nova-york-capa2019-06.jpg" alt="img">
+                    <img class="itens" src="https://lobopopart.com.br/wp-content/uploads/2020/07/New-York-Art.jpg" alt="img">
+                    <img class="itens" src="https://www.sepac.com.br/blog/wp-content/uploads/2021/02/Curiosidades-Times-Square-SEPAC.png" alt="img">
+                    <img class="itens" src="https://64.media.tumblr.com/3c4b656bb783d14c2e65f2226df4eb1e/tumblr_nxpwabmZYA1ukb6axo1_1280.jpg" alt="img">
+                </div>
+            </section>
+        </main>
+
+        <!--Entre em contato -->
+
+        <div id="contato">
+            <p>entre em contato </p> 
+            <div>
+            <input type="text" placeholder="Nome" id="nome_contato">
+            <input type="text" placeholder="Mensagem" id="mensagem_contato">
+            <button class="btn">Enviar</button>
+            </div>
+        </div>
+        <!-- entre em contato -->
+
+        <input type="checkbox" data-animation-pause id="css-toggle" class="hidden" />
+        <label for="css-toggle" class="chk">Clik para animar</label>
+        
+        <!-- redes sociais -->
+        <div class="redesocial a-slide" data-animation="stop">
+            <a><img src="https://cdn-icons-png.flaticon.com/512/37/37929.png" alt="logo" width="33" height="33"></a>
+            <a><img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-logo-Facebook-PNG.png" alt="logo" width="37" height="37"></a>
+            <a><img src="https://deciso-iesp.com/wp-content/uploads/2020/12/twitter-black-shape.png" alt="logo" width="33" height="33"></a>
+            <a><img src="https://i.pinimg.com/originals/df/ff/dd/dfffddfd14d32a7c65df01ab48b0d203.png" alt="logo" width="33" height="33"></a> 
+        </div>
+
+        <!-- rodape -->
+        <div id="rodape">
+            <p class="copyright"> @copyright - 2022 </p> <p class="copyright"> all rights reserved </p>
+        </div>
+
+</body>
+</html>
