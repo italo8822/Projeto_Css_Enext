@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* backdrop-filter: blur(30px); */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(54, 42, 42, 0.562);
+}
+
+nav .a{
+    padding-right: 25px;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://files.tecnoblog.net/wp-content/uploads/2022/03/wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.banner h1 {
+    padding-bottom: 150px;
+}
+
+/*-------------------  nav  ----------------------*/
+.logo {
+    color: #fff;
+    float: left;
+    display: block;
+    padding: 0;
+    font-size: 17px;
+    margin: 0;
+    padding-left: 25px;
+}
+
+nav a {
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    display: flex;
+    padding: 18px 20px;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(51, 255, 0);
+
+}
+
+/* Rodape final */
+#rodape {
+    background-color: #CCCCCC;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 51px;
+    text-align: center;
+    padding-top: 1px;
+    display: flex ;
+    justify-content: space-between;
+}
+
+#rodape p{
+    font-family: sans-serif;
+    color: #333333;
+    font-size: 15px;
+}
+
+.copyright{
+    margin: 15px 50px 0px 50px;
+}
+
+
+/* Rodape final */
+
+/* redes sociais */
+.redesocial{
+    background-color: rgb(255, 255, 255);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.redesocial img{
+margin: 0 30px;
+
+transform: translatey(0px);
+animation: float 3s ease-in-out infinite;
+animation-play-state: paused;
+}
+
+.a-slide {
+--animdur: 0s;
+--animn: slide;
+}
+
+[data-animation-pause]:checked ~ [data-animation] {
+animation: float 3s ease-in-out infinite;
+}
+
+[data-animation-pause]:checked + label::before {
+background-color: cornflowerblue;
+}
+/* redes sociais */
+
+/* entre em contato*/
+#contato {
+    background-image: linear-gradient(to left, #2E47B3, #417AFA);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contato div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#contato p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 28px;
+    margin-top: -40px;
+    margin-left: -500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contato input {
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 7px;
+    padding-left: 5px;
+    display: flex;
+}
+
+#mensagem_contato {
+    padding-right: 150px;
+}
+
+.btn {
+    border: none;
+    width: 100px;
+    height: 34px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.btn:hover{
+    /* background-color: -moz-linear-gradient(top, rgb(21, 19, 177), #000); */
+    background-color: white;
+    color: black;
+}
+
+/* entre em contato */
+
+/* imagem de perfil */
+.perfil{
+    float: left; 
+    margin-top: -180px;
+    margin-left: 160px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+/* imagem de perfil */
+
+/* galeria fotos */
+.projects, h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: 'Poppins';
+    padding-top: 90px;
+    }
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* div maior */
+.container{   
+    background-color: white; /*color da div por traz das imagens*/
+    padding: 0px 0px;
+    margin: 0 auto;                   
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center; 
+}
+
+/* div menores */
+.itens{                               
+    width: 335px;
+    height: 180px; 
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 15px;
+}
+/* galeria fotos */
+
+/* linguagens */
+#linguagens_2 {
+    background-color: white;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#linguagens_2 img{
+    margin: 0 20px; 
+    border-radius: 100%;
+}
+
+#linguagens_2 p{
+    font-size: 32px;
+}
+
+.btn_2 {
+    border: none;
+    width: 203px;
+    height: 51px;
+    border-radius: 10px;
+    background-color: rgba(83, 71, 228, 1);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 30px;
+    
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(4px);
+    }
+    50% {
+      transform: translatey(-8px);
+    }
+    100% {
+      transform: translatey(4px);
+    }
+  }
+
+/* linguagens */
+
+/* resumo */
+.resumo{
+    margin: 120px 20px 30px 90px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: baseline;
+    text-align: center;
+}
+
+hr{
+    width: 300px;
+    color: rgba(68, 68, 68, 0.25);
+    text-align: center;
+}
+
+.resumo h2 {
+    font-size: 36px;
+    margin: 2px;
+    text-align: center;
+}
+
+
+.imagem{
+    float: right;
+    width: 700px;
+    height: 180px;
+    border-radius: 12px;
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+.texto{
+    width: 300px;
+    text-align: center;
+    word-wrap: break-word;
+}
+/* resumo */
